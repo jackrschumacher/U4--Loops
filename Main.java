@@ -22,10 +22,16 @@ class Main {
   int previousNum = 0;
   int nextNum = 0;
 
+
+  System.out.println("0");
+  System.out.println("1");
+  
   for(int i =1; i < number; i++){
     nextNum = currentNum + previousNum;
     previousNum = currentNum;
     currentNum = nextNum;
+    System.out.println(currentNum); 
+    // This will print this out every time the loop runs
   }
   }
 }
