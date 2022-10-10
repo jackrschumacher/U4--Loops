@@ -18,6 +18,14 @@ class Main {
       }
     }while(number < 2);
 
-  in 
+  int currentNum = 1;
+  int previousNum = 0;
+  int nextNum = 0;
+
+  for(int i =1; i < number; i++){
+    nextNum = currentNum + previousNum;
+    previousNum = currentNum;
+    currentNum = nextNum;
+  }
   }
 }
